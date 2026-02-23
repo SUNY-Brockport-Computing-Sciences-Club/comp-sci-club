@@ -70,3 +70,5 @@ async def get_movie_by_id(movie_id: int):
             return movie
     raise HTTPException(status_code=404, detail="Movie not found")
 
+# python -m pip install fastapi uvicorn
+# python -m uvicorn LearningFastAPI:app --reload
